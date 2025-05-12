@@ -1,49 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Driplet | SOLANA</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/img/logo.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driplet | SOLANA</title>
+  <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+
+
+  <section class="main">
     <img src="./assets/img/grid.png" class="img_absolute img_grid" alt="" />
-    <div class="container">
-      <header>
+    <img src="./assets/img/light.png" class="img_absolute img_light" alt="">
+    <img src="./assets/img/particles.png" class="img_absolute img_particles" alt="">
+    <img src="./assets/img/BTC.png" class="img_absolute img_btc" alt="">
+    <img src="./assets/img/ETH.png" class="img_absolute img_eth" alt="">
+    <img src="./assets/img/USDT.png" class="img_absolute img_usdt" alt="">
+    <header>
+      <div class="header__logo_block">
+        <img src="./assets/img/logo.svg" alt="" />
+        <span> Driplet </span>
+      </div>
+      <ul class="header__ul">
+        <li><a href="">Video</a> </li>
+        <li><a href="">Mission</a></li>
+        <li><a href="">How it works</a></li>
+        <li><a href="">This is us</a></li>
+        <li><a href="">Reviews</a></li>
+        <li><a href="">Roadmap</a></li>
+        <li><a href="">FAQ</a></li>
+      </ul>
+      <button class="header__button">Join us on X</button>
+      <button class="mobile_menu">
+        <img src="./assets/img/menu.svg" />
+      </button>
+      <div class="mobile_menu_content">
+        <button class="mobile_menu__close">
+          <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Menu / Close_MD">
+              <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="rgba(255, 255, 255, 0.32)"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </button>
         <div class="header__logo_block">
-          <img src="./assets/img/logo.svg" alt="" />
+          <img src="./assets/img/logo.svg" />
           <span> Driplet </span>
         </div>
-        <ul class="header__ul">
-          <li>Video</li>
-          <li>Mission</li>
-          <li>How it works</li>
-          <li>This is us</li>
-          <li>Reviews</li>
-          <li>Roadmap</li>
-          <li>FAQ</li>
+        <ul class="header_list__mobile">
+          <li><a href="">Video</a> </li>
+          <li><a href="">Mission</a></li>
+          <li><a href="">How it works</a></li>
+          <li><a href="">This is us</a></li>
+          <li><a href="">Reviews</a></li>
+          <li><a href="">Roadmap</a></li>
+          <li><a href="">FAQ</a></li>
         </ul>
-        <button class="header__button">Join us on X</button>
-      </header>
-      <main>
-        <section class="main">
-          <div class="main__title_small">
-            <span
-              >Driplet - your cryptocurrency provider to the real world</span
-            >
-          </div>
-          <h1 class="main__title">
-            Driplet — <span> Web3 payment product</span> that allows users to
-            spend any Solana token in real life!
-          </h1>
-        </section>
-      </main>
+        <button class="header__button" onclick='window.location.href=config.url'>
+          <span>Join us on X</span>
+        </button>
+      </div>
+    </header>
+    <div class="main__content">
+
+      <div class="main__title_small">
+        <span>Driplet - your cryptocurrency provider to the real world</span>
+      </div>
+      <h1 class="main__title">
+        Driplet — <span> Web3 payment product</span> that allows users to
+        spend any Solana token in real life!
+      </h1>
+      <p class="main__desc">
+        Users top up their card balance with tokens like $BONK, $WIF, $SLERF (and any SPL token), and then pay for
+        goods or services online or offline — just like a regular bank card.
+      </p>
     </div>
-  </body>
+
+  </section>
+  <div class="container">
+    <main>
+      <section class="video">
+        <div class="section__title">
+          <span>
+            Video
+          </span>
+        </div>
+        <video src="./assets/video/video.mp4" autoplay muted loop controls>
+          <p>Ваш браузер не поддерживает HTML5 видео. Вот <a href="./assets/video/video.mp4">ссылка на
+              видео</a> взамен.</p>
+        </video>
+      </section>
+      <section class="mission" id="mission">
+        <div class="section__title">
+          <span>
+            Mission
+          </span>
+        </div>
+        <div class="mission__block">
+          <img src="./assets/img/shadow.png" class="img_absolute img_misson_shadow" alt="">
+          <div class="img_absolute img_block">
+            <img src="./assets/img/arrow.png" class="img_absolute img_mission_arrow_1" alt="">
+            <img src="./assets/img/arrow_2.png" class="img_absolute img_mission_arrow_2" alt="">
+            <img src="./assets/img/mostPopular.png" class=" img_most-popular" alt="">
+            <img src="./assets/img/autoSwap.png" class=" img_auto-swap" alt="">
+            <img src="./assets/img/paymentFinish.png" class=" img_payment-finish" alt="">
+          </div>
+          <span class="mission__title">Project Mission</span>
+          <p class="mission_desc">To make any Solana token — even the wildest memecoin — spendable in the real world.
+            Driplet turns degen activity into everyday utility: you live in crypto, and now you can spend your crypto
+            directly, without cashing out or swapping to fiat first.
+          </p>
+        </div>
+      </section>
+
+      <section class="howitworks" id="howitworks">
+        <div class="section__title">
+          <span>
+            How it works
+          </span>
+        </div>
+        <div class="howitworks__block">
+          <div class="howitworks___line">
+            <div class="line__block big">
+              <button class="big_block__button img_absolute">
+                Connect Wallet
+              </button>
+
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small_2" alt=""><img
+                src="./assets/img/grid_small.png" class="img_absolute img_howitworks_big_grid-small" alt="">
+              <img src="./assets/img/block_shadow.png" class="img_absolute img_howitworks_shadow" alt="">
+              <img src="./assets/img/mostPopular2.png" class="img_absolute img_howitworks_most-popular" alt="">
+              <div class="line_block__title">
+                1.
+              </div>
+              <div class="line_block__desc">
+                The user visits the website and connects a Phantom wallet or pastes a private key
+
+              </div>
+            </div>
+            <div class="line__block small">
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small" alt="">
+              <img src="./assets/img/block_shadow.png" class="img_absolute img_howitworks_shadow" alt="">
+
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small_2" alt=""><img
+                src="./assets/img/card.png" class="img_absolute img_howitworks_card" alt="">
+              <div class="line_block__title">
+                2.
+              </div>
+              <div class="line_block__desc">
+                They instantly receive a free virtual Driplet Card
+              </div>
+            </div>
+          </div>
+          <div class="howitworks___line">
+            <div class="line__block medium">
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small" alt="">
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small_2" alt="">
+              <img src="./assets/img/block_shadow.png" class="img_absolute img_howitworks_shadow" alt="">
+              <img src="./assets/img/currencies.png" class="img_absolute img_howitworks_currencies" alt="">
+              <div class="line_block__title">
+                3.
+              </div>
+              <div class="line_block__desc">
+                They top up the card with SOL, USDC, or any SPL memetoken
+
+              </div>
+            </div>
+            <div class="line__block medium">
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small" alt="">
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small_2" alt="">
+              <img src="./assets/img/block_shadow.png" class="img_absolute img_howitworks_shadow" alt="">
+              <img src="./assets/img/trade.png" class="img_absolute img_howitworks_trade" alt="">
+              <div class="line_block__title">
+                4.
+              </div>
+              <div class="line_block__desc">
+                When paying for something in the real world: The system reads the fiat amount of the transaction
+
+
+
+              </div>
+            </div>
+            <div class="line__block medium">
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small" alt="">
+              <img src="./assets/img/grid_small.png" class="img_absolute img_howitworks_small_grid-small_2" alt="">
+              <img src="./assets/img/block_shadow.png" class="img_absolute img_howitworks_shadow" alt="">
+              <img src="./assets/img/circle.png" class="img_absolute img_howitworks_circle" alt="">
+              <img src="./assets/img/blur.png" class="img_absolute img_howitworks_blur" alt="">
+              <div class="line_block__title">
+                4.
+              </div>
+              <div class="line_block__desc">
+                When paying for something in the real world: The system reads the fiat amount of the transaction
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="thisisus" id="thisisus">
+        <div class="section__title">
+          <span>
+            This is us
+          </span>
+        </div>
+        <div class="thisisus__block">
+          <div class="thisisus__line">
+            <div class="thisisus__line_block">
+              <img src="./assets/img/light_small.png" class="img_absolute img_light_thisisus" alt="">
+              <img src="./assets/img/grid_big.png" class="img_absolute img_grid_thisisus_big" alt="">
+              <div class="img_absolute line__avatar_block">
+                <img src="./assets/img/avatar_block.png" alt="">
+                <span>And other</span>
+              </div>
+              <span class="line_block__title">
+                Anyone who holds memecoins and wants to spend them, not just hold or sell
+              </span>
+            </div>
+            <div class="thisisus__line_block">
+              <img src="./assets/img/light_small.png" class="img_absolute img_light_thisisus" alt="">
+              <img src="./assets/img/grid_big.png" class="img_absolute img_grid_thisisus_big" alt="">
+              <img src="./assets/img/left_branch.png" class="img_absolute img_thisisus_left_branch" alt="">
+              <img src="./assets/img/right_branch.png" class="img_absolute img_thisisus_right_branch" alt="">
+
+              <span class="img_absolute text_thisisus">“Only for a couple of years did memecoin launch pads take over
+                the entire crypto community”</span>
+              <span class="line_block__title">
+                Pump.fun participants and token launchers
+
+              </span>
+            </div>
+          </div>
+
+          <div class="thisisus__line">
+            <div class="thisisus__line_block">
+              <img src="./assets/img/light_small.png" class="img_absolute img_light_thisisus" alt="">
+              <img src="./assets/img/grid_big.png" class="img_absolute img_grid_thisisus_big" alt="">
+              <img src="./assets/img/chart.png" class="img_absolute img_thisisus_chart" alt="">
+
+              <div class="img_absolute trust_block">
+                Trust in Bank system
+              </div>
+              <span class="line_block__title">
+                No fiat. No friction. Just crypto → card.
+              </span>
+            </div>
+            <div class="thisisus__line_block">
+              <img src="./assets/img/light_small.png" class="img_absolute img_light_thisisus" alt="">
+              <img src="./assets/img/grid_big.png" class="img_absolute img_grid_thisisus_big" alt="">
+              <img src="./assets/img/human.png" class="img_absolute img_thisisus_humans" alt="">
+
+              <span class="line_block__title">
+                Crypto that works for people
+
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="section__title">
+          <span>
+            Reviews
+          </span>
+        </div>
+        <div class="reviews__block">
+          <div class="review">
+            <div class="review__header">
+              <div class="review_header__user">
+                <div class="user__logo">
+                  <img src="./assets/img/avatar_1.png" alt="">
+                </div>
+                <div class="user__info">
+                  <span class="user__nickname">
+                    SatoshiLover
+                  </span>
+                  <span class="user__type">
+                    Beta user
+                  </span>
+                </div>
+              </div>
+              <div class="user__status">
+                Testnet User
+              </div>
+            </div>
+            <div class="review__content">
+              <span class="review__body">
+                Driplet is the future of payments! Now my memecoins work in real life. Fast, easy, no crazy fees.
+                Game-changer!
+              </span>
+              <span class="review__date">
+                2 months of use
+              </span>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review__header">
+              <div class="review_header__user">
+                <div class="user__logo">
+                  <img src="./assets/img/avatar_1.png" alt="">
+                </div>
+                <div class="user__info">
+                  <span class="user__nickname">
+                    SatoshiLover
+                  </span>
+                  <span class="user__type">
+                    Beta user
+                  </span>
+                </div>
+              </div>
+              <div class="user__status">
+                Testnet User
+              </div>
+            </div>
+            <div class="review__content">
+              <span class="review__body">
+                Driplet is the future of payments! Now my memecoins work in real life. Fast, easy, no crazy fees.
+                Game-changer!
+              </span>
+              <span class="review__date">
+                2 months of use
+              </span>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review__header">
+              <div class="review_header__user">
+                <div class="user__logo">
+                  <img src="./assets/img/avatar_1.png" alt="">
+                </div>
+                <div class="user__info">
+                  <span class="user__nickname">
+                    SatoshiLover
+                  </span>
+                  <span class="user__type">
+                    Beta user
+                  </span>
+                </div>
+              </div>
+              <div class="user__status">
+                Testnet User
+              </div>
+            </div>
+            <div class="review__content">
+              <span class="review__body">
+                Driplet is the future of payments! Now my memecoins work in real life. Fast, easy, no crazy fees.
+                Game-changer!
+              </span>
+              <span class="review__date">
+                2 months of use
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="roadmap" id="roadmap">
+        <div class="section__title">
+          <span>
+            Driplet Roadmap
+          </span>
+        </div>
+        <div class="roadmap__block">
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
